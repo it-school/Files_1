@@ -264,12 +264,11 @@ namespace Files
         static void Main()
         {
             // Группа
-            /*
             Group gr = new Group("AT181", 2);
 
-                       gr.Input();
+            gr.Input();
             Console.WriteLine("\nData in group:\n");
-                       gr.Print();
+            gr.Print();
 
             // Создаем поток для создания файла и/или записи в него
             FileStream fs = new FileStream(@"d:\group.txt", FileMode.OpenOrCreate, FileAccess.Write);
@@ -282,7 +281,7 @@ namespace Files
             // Закрываем потоки
             bw.Close();
             fs.Close();
-            */
+
             // Создаем поток для чтения из файла
             FileStream fsR = new FileStream("d:\\group.txt", FileMode.Open, FileAccess.Read);
             // Создаем двоичный поток для чтения
@@ -296,7 +295,7 @@ namespace Files
 
             gr1.Print();
 
-            
+
         }
     }
 }
